@@ -1,9 +1,8 @@
 FROM mysql:8.0
 
-# Set environment variables for MySQL
-ENV MYSQL_ROOT_PASSWORD=rootpassword
-ENV MYSQL_DATABASE=mydatabase
-ENV MYSQL_USER=myuser
-ENV MYSQL_PASSWORD=mypassword
+ENV MYSQL_DATABASE=myappdb 
+    MYSQL_ROOT_PASSWORD=rootpassword
+
+VOLUME /var/lib/mysql
 
 EXPOSE 3306
