@@ -1,5 +1,5 @@
 services:
-  - type: web
+  - type: private
     name: mysql-server
     env: docker
     plan: free
